@@ -1,0 +1,101 @@
+PERSONAJES
+pers_id INT PRIMARY KEY,
+raza_id INT FK,
+clase_id INT FK,
+ubi_id INT FK,
+nivel INT,
+nombre VARCHAR(30),
+HP INT,
+
+RAZAS
+raza_id INT PRIMARY KEY,
+descripcion VARCHAR(50),
+historia VARCHAR(100),
+
+CLASES
+clase_id INT PRIMARY KEY,
+descripcion VARCHAR(50),
+habilidad_propia VARCHAR(50)
+
+
+
+HABILIDADES
+habi_id INT PRIMARY KEY,
+clase_id INT FK,
+descripcion VARCHAR(50),
+efecto VARCHAR(50)
+
+OBJETOS
+obj_id INT PRIMARY KEY, AUTOINCREMENT
+raza_id INT FK,
+descripcion VARCHAR(50),
+efecto VARCHAR(50)
+
+USUARIOS
+user_id INT PRIMARY KEY,
+nombre VARCHAR(20),
+email VARCHAR(20),
+pers_id INT FK,
+username VARCHAR(15), UNI
+password VARCHAR(15)
+
+UBICACIONES
+ubi_id INT PRIMARY KEY,
+descripcion VARCHAR(50),
+historia VARCHAR(100)
+
+
+create schema Stairs;
+use Stairs;
+
+CREATE TABLE personajes( 
+pers_id INT, raza_id INT, clase_id INT, ubi_id INT,
+nivel INT, nombre VARCHAR(30), hp INT,
+PRIMARY KEY (pers_id), 
+FOREIGN KEY (raza_id) REFERENCES razas(raza_id),
+FOREIGN KEY (clase_id) REFERENCES clases(clase_id),
+FOREIGN KEY (ubi_id) REFERENCES ubicaciones(ubi_id)
+);
+
+CREATE TABLE razas(
+raza_id INT, descripcion VARCHAR(50), historia VARCHAR(100), PRIMARY KEY (raza_id));
+
+CREATE TABLE clases(
+clase_id INT, descripcion VARCHAR(50), habilidad_propia VARCHAR(100), PRIMARY KEY (clase_id));
+
+CREATE TABLE ubicaciones(
+ubi_id INT, descripcion VARCHAR(50), historia VARCHAR(50), PRIMARY KEY (ubi_id)
+);
+
+CREATE TABLE habilidades(
+habi_id INT,
+clase_id INT,
+descripcion VARCHAR(50),
+efecto VARCHAR(50), PRIMARY KEY (habi_id), FOREIGN KEY (clase_id) REFERENCES clases(clase_id));
+
+CREATE TABLE objetos(
+obj_id INT,
+raza_id INT,
+descripcion VARCHAR(50),
+efecto VARCHAR(50),
+PRIMARY KEY (obj_id), FOREIGN KEY (raza_id) REFERENCES razas(raza_id));
+
+CREATE TABLE usuarios(
+user_id INT,
+nombre VARCHAR(20),
+email VARCHAR(20),
+pers_id INT,
+username VARCHAR(15),
+pass VARCHAR(15), PRIMARY KEY (user_id), FOREIGN KEY (pers_id) REFERENCES personajes(pers_id));
+
+show tables;
+
+Tablas posibles por agregar: tiendas, batallas, BatallasPersonajes, intercambios, monedas?, amigos (relacion dueño user id  friend user id)
+
+
+ALTER TABLE artists
+CHANGE COLUMN id id INT NOT NULL AUTO_INCREMENT,
+ADD PRIMARY KEY (id); 
+
+
+
