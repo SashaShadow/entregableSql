@@ -1,0 +1,11 @@
+habi_id,descripcion,efecto
+default,Mordida,Quita al oponente 5% de su vida por turno
+default,Confusion,Una vez por turno el enemigo se puede causar danio a si mismo
+default,Susto,Saltea el turno del enemigo en un 50%
+default,Patada,Quita 15 de HP
+default,Fuego,Quita 15 de HP
+default,Mal augurio,En 3 turnos el enemigo pierde el 70% de su HP
+default,Pesadilla,Saltea el turno del enemigo en un 30%
+default,Posesion,Usa una habilidad del enemigo a tu favor
+default,Niebla,Disminuye la eficacia del ataque del enemigo
+default,Mordida sangrante, Quita al oponente 10% de su vida por turno
