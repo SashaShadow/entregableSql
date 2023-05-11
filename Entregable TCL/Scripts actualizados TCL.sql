@@ -288,24 +288,24 @@ END //
 
 DELIMITER ;
 
-select insertar_valores_batallasvarios();
-select insertar_valores_batallas();
-select insertar_valores_batallasvarios();
-select insertar_valores_batallas();
-select insertar_valores_batallasvarios();
+--select insertar_valores_batallasvarios();
+--select insertar_valores_batallas();
+--select insertar_valores_batallasvarios();
+--select insertar_valores_batallas();
+--select insertar_valores_batallasvarios();
 
 -- ------------------------------------- Vistas
 CREATE OR REPLACE VIEW batallas_ganadas_personajes AS
 (select count(*) as batallas_ganadas, ganador from batallas group by ganador ORDER by count(*) desc);
 
-select * from batallas_ganadas_personajes;
+--select * from batallas_ganadas_personajes;
 
 CREATE OR REPLACE VIEW batallas_peleadas_personajes AS
 (select count(*) as batallas_peleadas, p.nombre from batallas b 
 join personajes p on p.pers_id =  b.pers_id
 group by b.pers_id order by batallas_peleadas desc);
 
-select * from batallas_peleadas_personajes;
+--select * from batallas_peleadas_personajes;
 
 -- personajes segun clase
 CREATE OR REPLACE VIEW clases_segun_personaje AS
@@ -313,7 +313,7 @@ CREATE OR REPLACE VIEW clases_segun_personaje AS
 join clases c on c.clase_id = p.clase_id
 order by c.nombre);
 
-select * from clases_segun_personaje;
+--select * from clases_segun_personaje;
 
 -- cantidad de uso de cada clase por los personajes
 CREATE OR REPLACE VIEW cantidad_clases_usadas AS
@@ -321,7 +321,7 @@ CREATE OR REPLACE VIEW cantidad_clases_usadas AS
 join clases c on c.clase_id = p.clase_id
 group by p.clase_id order by cantidad desc);
 
-select * from cantidad_clases_usadas;
+--select * from cantidad_clases_usadas;
 
 -- cantidad de uso de cada raza por los personajes
 CREATE OR REPLACE VIEW cantidad_razas_usadas AS
@@ -329,12 +329,12 @@ CREATE OR REPLACE VIEW cantidad_razas_usadas AS
 join razas r on r.raza_id = p.raza_id
 group by p.raza_id order by cantidad desc);
 
-select * from cantidad_razas_usadas;
-select * from cantidad_razas_usadas;
-select * from cantidad_clases_usadas;
-select * from clases_segun_personaje;
-select * from batallas_ganadas_personajes;
-select * from batallas_peleadas_personajes;
+--select * from cantidad_razas_usadas;
+--select * from cantidad_razas_usadas;
+--select * from cantidad_clases_usadas;
+--select * from clases_segun_personaje;
+--select * from batallas_ganadas_personajes;
+--select * from batallas_peleadas_personajes;
 
 -- ...de yapa, vista que integra las anteriores
 CREATE OR REPLACE VIEW batallas_peleadas_ganadas as
@@ -342,7 +342,7 @@ CREATE OR REPLACE VIEW batallas_peleadas_ganadas as
 from batallas_peleadas_personajes as bp
 join batallas_ganadas_personajes as bg on bp.nombre = bg.ganador); 
 
-select * from batallas_peleadas_ganadas;
+--select * from batallas_peleadas_ganadas;
 -- ---------------------------------------------------------------
 
 
@@ -360,7 +360,7 @@ BEGIN
 END;
 //
 -- El resultado se leeria como 'Hay x personajes que pelearon parametro veces' si fuera una string
-select personajes_con_batallas_peleadas_hasta(8);
+--select personajes_con_batallas_peleadas_hasta(8);
 
 -- La siguiente funcion chequea si el nombre del personaje indicado 
 -- gano mas batallas de las que perdio o no
@@ -377,7 +377,7 @@ BEGIN
 END
 //
 
-SELECT gano_mas_de_lo_que_perdio('Amaterasu');
+--SELECT gano_mas_de_lo_que_perdio('Amaterasu');
 
 -- La siguiente funcion devuelve a los nombres de tres personajes segun su longitud.
 -- Si se especifica como parametro DESC, el resultado devolvera los 3 nombres de mas longitud,
@@ -435,14 +435,14 @@ BEGIN
 END 
 SHADOW
 
-CALL actualizar_niveles('Lord E.', @resultado);
-select @resultado;
+--CALL actualizar_niveles('Lord E.', @resultado);
+--select @resultado;
 
 -- Con esta consulta reviso el estado de las mochilas de los personajes tras actualizar el nivel de alguno/s
-select o.descripcion objeto, p.nombre dueño from mochilas m
-join objetos o on o.obj_id = m.obj_id
-join personajes p on m.pers_id = p.pers_id
-order by dueño;
+--select o.descripcion objeto, p.nombre dueño from mochilas m
+--join objetos o on o.obj_id = m.obj_id
+--join personajes p on m.pers_id = p.pers_id
+--order by dueño;
 
 -- El siguiente procedure toma dos parametros IN, uno que indica el campo de ordenamiento de la tabla personajes
 -- y el otro si el ordenamiento es ascendente o descendente. Tambien defino el OUT que sera el resultado.
@@ -457,14 +457,14 @@ BEGIN
         SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Tipo de orden inválido';
     END IF;
     
-	SET @sql = CONCAT('SELECT * FROM personajes ORDER BY ', campo, ' ', @orden);
+	SET @sql = CONCAT('--select * FROM personajes ORDER BY ', campo, ' ', @orden);
     PREPARE stmt FROM @sql;
     EXECUTE stmt;
     DEALLOCATE PREPARE stmt;
 END
 STRS
 
-CALL ordenar_personajes('pers_id', 'DESC');
+--CALL ordenar_personajes('pers_id', 'DESC');
 
 -- Triggers ----------------------------------------------------------------------------------------
 
@@ -512,13 +512,13 @@ INSERT INTO personajes (raza_id, clase_id, ubi_id, nombre, hp) values
 (11, 5, 1, 'Takumi', 100);
 
 -- Recuperamos su pers_id (en mi caso es 13)
-select * from personajes where nombre = 'Takumi';
+--select * from personajes where nombre = 'Takumi';
 
 -- Efectivamente vemos que el personaje ya tiene los objetos iniciales
-select p.nombre dueño, o.descripcion objeto from mochilas m
-join objetos o on o.obj_id = m.obj_id
-join personajes p on p.pers_id = m.pers_id
-where p.pers_id = 13;
+--select p.nombre dueño, o.descripcion objeto from mochilas m
+--join objetos o on o.obj_id = m.obj_id
+--join personajes p on p.pers_id = m.pers_id
+--where p.pers_id = 13;
 
 -- Tabla nueva necesaria para los siguientes TRIGGERS
 CREATE TABLE cantidad_batallas (
@@ -560,24 +560,24 @@ END;
 STRS
 
 -- Vemos cuantas batallas hay
-select * from cantidad_batallas;
+--select * from cantidad_batallas;
 
 -- Ingresamos mas usando una funcion creada anteriormente
-select insertar_valores_batallasvarios();
+--select insertar_valores_batallasvarios();
 
 -- Volvemos a chequear y vemos que el numero de batallas aumentó en 10
-select * from cantidad_batallas;
+--select * from cantidad_batallas;
 
 -- DCL-------------------------------------------------------------------------------------------------
 use mysql;
 
-show tables;
+--SHOW tables;
 
-SELECT * FROM USER;
+--select * FROM USER;
 
 use Stairs;
 
-SHOW VARIABLES LIKE 'validate_password%';
+--SHOW VARIABLES LIKE 'validate_password%';
 
 -- Creacion de los usuarios, con las contraseñas necesarias segun la politica actual de las mismas.
 CREATE USER buenlector@localhost identified by 'Lectura!1';
@@ -611,17 +611,17 @@ GRANT SELECT, UPDATE, INSERT ON usuarios TO manipulador@localhost;
 GRANT SELECT, UPDATE, INSERT ON habilidadesclases TO manipulador@localhost;
 
 -- Vemos ahora los permisos actualizados de ambos usuarios:
-SHOW GRANTS FOR buenlector@localhost;
-SHOW GRANTS FOR manipulador@localhost;
+--SHOW GRANTS FOR buenlector@localhost;
+--SHOW GRANTS FOR manipulador@localhost;
 
 -- TCL -------------------------------------------------------------------------------------------------------
 
-SELECT @@AUTOCOMMIT;
+--SELECT @@AUTOCOMMIT;
 
 SET AUTOCOMMIT = 0;
 
 -- Primera tabla (tiene registros).
-select * from batallas where mons_id = 2;
+--select * from batallas where mons_id = 2;
 
 -- Vamos a borrar todos los registros de objetos que empiecen con A
 START TRANSACTION;
@@ -630,11 +630,11 @@ SET @ids = (SELECT GROUP_CONCAT(bat_id) FROM batallas WHERE mons_id = 2);
 DELETE FROM batallas WHERE FIND_IN_SET(bat_id, @ids);
 
 -- Vemos que los registros que antes estaban se eliminaron:
-select * from batallas where mons_id = 2;
+--select * from batallas where mons_id = 2;
 
 -- Ejecutando rollback los registros vuelven a estar
 ROLLBACK;
-select * from batallas where mons_id = 2;
+--select * from batallas where mons_id = 2;
 
 -- Si ejecutaramos commit estos registros quedarian eliminados para siempre.
 -- COMMIT;
