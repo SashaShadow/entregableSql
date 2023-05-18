@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.32, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.33, for Linux (x86_64)
 --
 -- Host: localhost    Database: Stairs
 -- ------------------------------------------------------
--- Server version	8.0.32-0ubuntu0.22.04.2
+-- Server version	8.0.33-0ubuntu0.22.04.2
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -21,7 +21,7 @@
 
 LOCK TABLES `batallas` WRITE;
 /*!40000 ALTER TABLE `batallas` DISABLE KEYS */;
-INSERT INTO `batallas` VALUES (5,1,1,'Mr. Jung'),(6,1,2,'Mr. Jung'),(7,1,3,'Mr. Jung'),(8,1,5,'Dragon'),(9,2,1,'Amaterasu'),(10,2,2,'Amaterasu'),(11,2,2,'Druida del bosque'),(12,1,7,'Mr. Jung'),(13,1,20,'Mr. Jung'),(14,5,17,'Sky'),(15,12,13,'Sopor'),(16,4,6,'Lady E.'),(17,10,9,'HARE.'),(18,1,8,'Mr. Jung'),(19,10,10,'HARE.'),(20,12,1,'Sopor'),(21,12,16,'Sopor'),(22,10,15,'HARE.'),(23,6,5,'Lord Huron'),(24,1,16,'Mr. Jung'),(25,5,19,'Sky'),(26,9,15,'AW.E'),(27,6,8,'Lord Huron'),(28,10,16,'HARE.'),(29,6,7,'Lord Huron'),(30,12,2,'Sopor'),(31,1,14,'Mr. Jung'),(32,9,18,'AW.E'),(33,10,3,'HARE.'),(34,3,3,'Lord E.'),(35,5,7,'Sky'),(36,12,9,'Señor Oscuro'),(37,8,3,'Metal Icca.'),(38,5,9,'Señor Oscuro'),(39,2,4,'Gigante'),(40,8,12,'Metal Icca.'),(41,12,7,'Sucubo'),(42,3,7,'Sucubo'),(43,9,9,'AW.E'),(44,7,6,'ACDC.'),(45,9,17,'Ven a mi'),(46,7,15,'Lobo gris'),(47,10,9,'HARE.'),(48,11,5,'Mewtal.'),(49,5,11,'Sky'),(50,10,17,'Ven a mi'),(51,5,16,'Puerta eterna'),(52,4,5,'Lady E.'),(53,7,5,'ACDC.'),(54,2,8,'Amaterasu'),(55,12,6,'Sopor'),(56,3,11,'Gato diabolico'),(57,11,7,'Sucubo'),(58,2,5,'Amaterasu'),(59,3,3,'Lord E.'),(60,6,7,'Sucubo'),(61,12,12,'Sopor'),(62,12,1,'Sopor'),(63,3,8,'Lord E.'),(64,10,6,'Banshee'),(65,3,6,'Banshee'),(66,12,7,'Sopor'),(67,9,13,'Ranas venenosas'),(68,7,5,'Dragon'),(69,10,8,'Incubo'),(70,11,9,'Señor Oscuro'),(71,4,9,'Señor Oscuro'),(72,8,7,'Sucubo'),(73,12,3,'Luz mala'),(74,5,5,'Dragon'),(75,4,5,'Dragon'),(76,11,2,'Druida del bosque'),(77,1,20,'Ella'),(78,1,19,'Mr. Jung'),(79,8,8,'Incubo'),(80,2,20,'Ella'),(81,12,4,'Sopor'),(82,4,12,'Lady E.'),(83,3,7,'Lord E.'),(84,10,3,'HARE.'),(85,6,4,'Gigante'),(86,10,13,'HARE.'),(87,7,15,'Lobo gris'),(88,11,5,'Mewtal.'),(89,4,12,'Lady E.'),(90,2,11,'Amaterasu'),(91,9,15,'Lobo gris'),(92,4,12,'El'),(93,2,2,'Druida del bosque'),(94,3,9,'Lord E.'),(95,1,9,'Señor Oscuro'),(96,7,16,'Puerta eterna'),(97,5,8,'Sky'),(98,4,14,'Clon'),(99,4,19,'Señor de Luz'),(100,2,15,'Lobo gris'),(101,3,12,'Lord E.'),(102,9,5,'Dragon'),(103,10,1,'HARE.'),(104,8,10,'Metal Icca.'),(105,7,16,'Puerta eterna'),(106,10,12,'El'),(107,9,14,'AW.E'),(108,5,5,'Sky'),(109,2,2,'Druida del bosque'),(110,5,6,'Banshee'),(111,12,7,'Sopor'),(112,8,18,'Flor espinosa'),(113,8,3,'Luz mala'),(114,4,3,'Lady E.'),(115,5,2,'Druida del bosque'),(116,8,14,'Metal Icca.'),(117,3,16,'Lord E.'),(118,2,16,'Amaterasu'),(119,7,11,'ACDC.'),(120,3,18,'Lord E.'),(121,9,7,'AW.E'),(122,2,14,'Amaterasu'),(123,4,12,'Lady E.'),(124,2,17,'Amaterasu'),(125,10,7,'HARE.'),(126,9,13,'AW.E'),(127,12,2,'Sopor'),(128,1,13,'Mr. Jung'),(129,9,9,'AW.E'),(130,3,20,'Lord E.'),(131,3,19,'Lord E.'),(132,9,7,'AW.E'),(133,12,10,'Sopor'),(134,9,13,'AW.E'),(135,4,2,'Lady E.'),(136,6,5,'Lord Huron'),(137,1,19,'Mr. Jung'),(138,7,7,'ACDC.'),(139,6,12,'Lord Huron'),(140,10,8,'HARE.'),(141,9,9,'AW.E'),(142,7,7,'ACDC.'),(143,7,8,'ACDC.'),(144,12,19,'Sopor'),(145,5,18,'Sky'),(146,12,20,'Sopor'),(147,4,8,'Lady E.'),(148,11,14,'Mewtal.'),(149,7,5,'ACDC.'),(150,1,3,'Mr. Jung'),(151,2,2,'Amaterasu'),(152,1,19,'Mr. Jung'),(153,10,20,'HARE.'),(154,4,17,'Lady E.'),(155,1,5,'Mr. Jung'),(156,8,1,'Metal Icca.'),(157,8,1,'Metal Icca.'),(158,4,13,'Lady E.'),(159,4,18,'Lady E.'),(160,1,9,'Mr. Jung'),(161,8,3,'Metal Icca.'),(162,8,19,'Metal Icca.'),(163,12,19,'Sopor'),(164,9,17,'AW.E'),(165,3,16,'Lord E.'),(166,2,7,'Amaterasu'),(167,10,9,'Señor Oscuro'),(168,8,14,'Clon'),(169,8,9,'Metal Icca.'),(170,4,3,'Lady E.'),(171,7,2,'Druida del bosque'),(172,12,13,'Ranas venenosas'),(173,2,5,'Dragon'),(174,1,6,'Mr. Jung'),(175,10,15,'HARE.'),(176,10,14,'Clon'),(177,6,6,'Lord Huron'),(178,2,9,'Señor Oscuro'),(179,1,1,'Mr. Jung'),(180,1,7,'Sucubo'),(181,10,18,'Flor espinosa'),(182,3,19,'Señor de Luz'),(183,7,20,'ACDC.'),(184,12,3,'Luz mala'),(185,4,3,'Luz mala'),(186,11,17,'Mewtal.'),(187,5,18,'Flor espinosa'),(188,4,20,'Lady E.'),(189,6,3,'Lord Huron'),(190,3,3,'Luz mala'),(191,3,10,'Lobo blanco'),(192,5,19,'Señor de Luz'),(193,8,11,'Gato diabolico'),(194,9,12,'El'),(195,1,6,'Mr. Jung'),(196,1,1,'Lobo salvaje'),(197,4,14,'Lady E.'),(198,10,12,'HARE.'),(199,9,12,'AW.E'),(200,13,1,'Lobo salvaje'),(201,7,14,'ACDC.'),(202,1,5,'Mr. Jung'),(203,5,16,'Sky'),(204,10,19,'HARE.'),(205,11,14,'Mewtal.'),(206,12,2,'Sopor'),(207,4,4,'Lady E.'),(208,12,3,'Luz mala'),(209,9,4,'Gigante'),(210,2,7,'Amaterasu'),(211,5,13,'Sky'),(212,12,4,'Gigante'),(213,5,20,'Sky'),(214,9,13,'AW.E'),(215,5,8,'Sky'),(216,5,17,'Ven a mi'),(217,1,17,'Mr. Jung'),(218,10,20,'HARE.'),(219,5,1,'Sky'),(220,1,8,'Mr. Jung'),(221,13,6,'Banshee'),(222,8,2,'Druida del bosque'),(223,6,17,'Lord Huron'),(224,1,9,'Señor Oscuro'),(225,13,11,'Takumi'),(226,3,17,'Ven a mi'),(227,9,18,'Flor espinosa'),(228,4,5,'Dragon'),(229,8,9,'Metal Icca.'),(230,10,3,'Luz mala'),(231,5,9,'Señor Oscuro'),(232,6,10,'Lobo blanco'),(233,11,17,'Mewtal.'),(234,11,12,'Mewtal.'),(235,1,20,'Ella');
+INSERT INTO `batallas` VALUES (5,1,1,'Mr. Jung'),(6,1,2,'Mr. Jung'),(7,1,3,'Mr. Jung'),(8,1,5,'Dragon'),(9,2,1,'Amaterasu'),(10,2,2,'Amaterasu'),(11,2,2,'Druida del bosque'),(12,1,7,'Mr. Jung'),(13,1,20,'Mr. Jung'),(14,5,17,'Sky'),(15,12,13,'Sopor'),(16,4,6,'Lady E.'),(17,10,9,'HARE.'),(18,1,8,'Mr. Jung'),(19,10,10,'HARE.'),(20,12,1,'Sopor'),(21,12,16,'Sopor'),(22,10,15,'HARE.'),(23,6,5,'Lord Huron'),(24,1,16,'Mr. Jung'),(25,5,19,'Sky'),(26,9,15,'AW.E'),(27,6,8,'Lord Huron'),(28,10,16,'HARE.'),(29,6,7,'Lord Huron'),(30,12,2,'Sopor'),(31,1,14,'Mr. Jung'),(32,9,18,'AW.E'),(33,10,3,'HARE.'),(34,3,3,'Lord E.'),(35,5,7,'Sky'),(36,12,9,'Señor Oscuro'),(37,8,3,'Metal Icca.'),(38,5,9,'Señor Oscuro'),(39,2,4,'Gigante'),(40,8,12,'Metal Icca.'),(41,12,7,'Sucubo'),(42,3,7,'Sucubo'),(43,9,9,'AW.E'),(44,7,6,'ACDC.'),(45,9,17,'Ven a mi'),(46,7,15,'Lobo gris'),(47,10,9,'HARE.'),(48,11,5,'Mewtal.'),(49,5,11,'Sky'),(50,10,17,'Ven a mi'),(51,5,16,'Puerta eterna'),(52,4,5,'Lady E.'),(53,7,5,'ACDC.'),(54,2,8,'Amaterasu'),(55,12,6,'Sopor'),(56,3,11,'Gato diabolico'),(57,11,7,'Sucubo'),(58,2,5,'Amaterasu'),(59,3,3,'Lord E.'),(60,6,7,'Sucubo'),(61,12,12,'Sopor'),(62,12,1,'Sopor'),(63,3,8,'Lord E.'),(64,10,6,'Banshee'),(65,3,6,'Banshee'),(66,12,7,'Sopor'),(67,9,13,'Ranas venenosas'),(68,7,5,'Dragon'),(69,10,8,'Incubo'),(70,11,9,'Señor Oscuro'),(71,4,9,'Señor Oscuro'),(72,8,7,'Sucubo'),(73,12,3,'Luz mala'),(74,5,5,'Dragon'),(75,4,5,'Dragon'),(76,11,2,'Druida del bosque'),(77,1,20,'Ella'),(78,1,19,'Mr. Jung'),(79,8,8,'Incubo'),(80,2,20,'Ella'),(81,12,4,'Sopor'),(82,4,12,'Lady E.'),(83,3,7,'Lord E.'),(84,10,3,'HARE.'),(85,6,4,'Gigante'),(86,10,13,'HARE.'),(87,7,15,'Lobo gris'),(88,11,5,'Mewtal.'),(89,4,12,'Lady E.'),(90,2,11,'Amaterasu'),(91,9,15,'Lobo gris'),(92,4,12,'El'),(93,2,2,'Druida del bosque'),(94,3,9,'Lord E.'),(95,1,9,'Señor Oscuro'),(96,7,16,'Puerta eterna'),(97,5,8,'Sky'),(98,4,14,'Clon'),(99,4,19,'Señor de Luz'),(100,2,15,'Lobo gris'),(101,3,12,'Lord E.'),(102,9,5,'Dragon'),(103,10,1,'HARE.'),(104,8,10,'Metal Icca.'),(105,7,16,'Puerta eterna'),(106,10,12,'El'),(107,9,14,'AW.E'),(108,5,5,'Sky'),(109,2,2,'Druida del bosque'),(110,5,6,'Banshee'),(111,12,7,'Sopor'),(112,8,18,'Flor espinosa'),(113,8,3,'Luz mala'),(114,4,3,'Lady E.'),(115,5,2,'Druida del bosque'),(116,8,14,'Metal Icca.'),(117,3,16,'Lord E.'),(118,2,16,'Amaterasu'),(119,7,11,'ACDC.'),(120,3,18,'Lord E.'),(121,9,7,'AW.E'),(122,2,14,'Amaterasu'),(123,4,12,'Lady E.'),(124,2,17,'Amaterasu'),(125,10,7,'HARE.'),(126,9,13,'AW.E'),(127,12,2,'Sopor'),(128,1,13,'Mr. Jung'),(129,9,9,'AW.E'),(130,3,20,'Lord E.'),(131,3,19,'Lord E.'),(132,9,7,'AW.E'),(133,12,10,'Sopor'),(134,9,13,'AW.E'),(135,4,2,'Lady E.'),(136,6,5,'Lord Huron'),(137,1,19,'Mr. Jung'),(138,7,7,'ACDC.'),(139,6,12,'Lord Huron'),(140,10,8,'HARE.'),(141,9,9,'AW.E'),(142,7,7,'ACDC.'),(143,7,8,'ACDC.'),(144,12,19,'Sopor'),(145,5,18,'Sky'),(146,12,20,'Sopor'),(147,4,8,'Lady E.'),(148,11,14,'Mewtal.'),(149,7,5,'ACDC.'),(150,1,3,'Mr. Jung'),(151,2,2,'Amaterasu'),(152,1,19,'Mr. Jung'),(153,10,20,'HARE.'),(154,4,17,'Lady E.'),(155,1,5,'Mr. Jung'),(156,8,1,'Metal Icca.'),(157,8,1,'Metal Icca.'),(158,4,13,'Lady E.'),(159,4,18,'Lady E.'),(160,1,9,'Mr. Jung'),(161,8,3,'Metal Icca.'),(162,8,19,'Metal Icca.'),(163,12,19,'Sopor'),(164,9,17,'AW.E'),(165,3,16,'Lord E.'),(166,2,7,'Amaterasu'),(167,10,9,'Señor Oscuro'),(168,8,14,'Clon'),(169,8,9,'Metal Icca.'),(170,4,3,'Lady E.'),(171,7,2,'Druida del bosque'),(172,12,13,'Ranas venenosas'),(173,2,5,'Dragon'),(174,1,6,'Mr. Jung'),(175,10,15,'HARE.'),(176,10,14,'Clon'),(177,6,6,'Lord Huron'),(178,2,9,'Señor Oscuro'),(179,1,1,'Mr. Jung'),(180,1,7,'Sucubo'),(181,10,18,'Flor espinosa'),(182,3,19,'Señor de Luz'),(183,7,20,'ACDC.'),(184,12,3,'Luz mala'),(185,4,3,'Luz mala'),(186,11,17,'Mewtal.'),(187,5,18,'Flor espinosa'),(188,4,20,'Lady E.'),(189,6,3,'Lord Huron'),(190,3,3,'Luz mala'),(191,3,10,'Lobo blanco'),(192,5,19,'Señor de Luz'),(193,8,11,'Gato diabolico'),(194,9,12,'El'),(195,1,6,'Mr. Jung'),(196,1,1,'Lobo salvaje'),(197,4,14,'Lady E.'),(198,10,12,'HARE.'),(199,9,12,'AW.E'),(200,13,1,'Lobo salvaje'),(201,7,14,'ACDC.'),(202,1,5,'Mr. Jung'),(203,5,16,'Sky'),(204,10,19,'HARE.'),(205,11,14,'Mewtal.'),(206,12,2,'Sopor'),(207,4,4,'Lady E.'),(208,12,3,'Luz mala'),(209,9,4,'Gigante'),(210,2,7,'Amaterasu'),(211,5,13,'Sky'),(212,12,4,'Gigante'),(213,5,20,'Sky'),(214,9,13,'AW.E'),(215,5,8,'Sky'),(216,5,17,'Ven a mi'),(217,1,17,'Mr. Jung'),(218,10,20,'HARE.'),(219,5,1,'Sky'),(220,1,8,'Mr. Jung'),(221,13,6,'Banshee'),(222,8,2,'Druida del bosque'),(223,6,17,'Lord Huron'),(224,1,9,'Señor Oscuro'),(225,13,11,'Takumi'),(226,3,17,'Ven a mi'),(227,9,18,'Flor espinosa'),(228,4,5,'Dragon'),(229,8,9,'Metal Icca.'),(230,10,3,'Luz mala'),(231,5,9,'Señor Oscuro'),(232,6,10,'Lobo blanco'),(233,11,17,'Mewtal.'),(234,11,12,'Mewtal.'),(235,1,20,'Ella'),(236,10,10,'HARE.'),(237,8,9,'Metal Icca.'),(238,2,4,'Amaterasu'),(239,10,7,'Sucubo'),(240,6,1,'Lobo salvaje'),(241,7,14,'ACDC.'),(242,8,16,'Puerta eterna'),(243,12,8,'Sopor'),(244,7,8,'Incubo'),(245,6,11,'Gato diabolico');
 /*!40000 ALTER TABLE `batallas` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -48,7 +48,7 @@ DELIMITER ;
 
 LOCK TABLES `cantidad_batallas` WRITE;
 /*!40000 ALTER TABLE `cantidad_batallas` DISABLE KEYS */;
-INSERT INTO `cantidad_batallas` VALUES (1,231);
+INSERT INTO `cantidad_batallas` VALUES (1,241);
 /*!40000 ALTER TABLE `cantidad_batallas` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -187,6 +187,24 @@ DELIMITER ;
 /*!50003 SET character_set_client  = @saved_cs_client */ ;
 /*!50003 SET character_set_results = @saved_cs_results */ ;
 /*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_0900_ai_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `auditoria_personajes` AFTER INSERT ON `personajes` FOR EACH ROW BEGIN
+	INSERT INTO registro_personajes (pers_id, fecha, usuario_creador) 
+	VALUES (NEW.pers_id, NOW(), SYSTEM_USER());
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
 
 --
 -- Dumping data for table `razas`
@@ -196,6 +214,35 @@ LOCK TABLES `razas` WRITE;
 /*!40000 ALTER TABLE `razas` DISABLE KEYS */;
 INSERT INTO `razas` VALUES (11,'Seres que conviven en comunidad','Su historia se remonta a miles de años y diferentes culturas','humano'),(12,'Seres altos humanoides con grandes poderes magicos','Han dominado las artes y los hechizos como ninguna otra raza','elfo'),(13,'Seres con gran barba y habilidad para fabricar metales','En algun punto tuvieron cruza con los humanos','enano'),(14,'Seres espirituales','Tienen una conexion con los antiguos dioses','valar'),(15,'Seres artificiales creados para la batalla','Creados con fines malignos para destruir otros pueblo y dominar','orco'),(21,'Seres que conviven en solitario','Su historia se remonta a miles de años y diferentes culturas','humano oscuro'),(22,'Seres altos humanoides con grandes poderes magicos oscuros','Han dominado las artes y los hechizos como ninguna otra raza','elfo oscuro'),(23,'Seres mitad hombre mitad caballo','Viven alejados en los bosques','centauro'),(24,'Seres de otro mundo','Desconocida','alienigena'),(25,'Seres ancestrales y sagrados','Habitan entre los hombres de incognito','angel');
 /*!40000 ALTER TABLE `razas` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `registro_personajes`
+--
+
+LOCK TABLES `registro_personajes` WRITE;
+/*!40000 ALTER TABLE `registro_personajes` DISABLE KEYS */;
+/*!40000 ALTER TABLE `registro_personajes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `tiendas`
+--
+
+LOCK TABLES `tiendas` WRITE;
+/*!40000 ALTER TABLE `tiendas` DISABLE KEYS */;
+INSERT INTO `tiendas` VALUES (1,'Geri'),(2,'Raion'),(3,'Cafe 13'),(4,'Mi au'),(5,'Oh God Store');
+/*!40000 ALTER TABLE `tiendas` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `tiendas_objetos`
+--
+
+LOCK TABLES `tiendas_objetos` WRITE;
+/*!40000 ALTER TABLE `tiendas_objetos` DISABLE KEYS */;
+INSERT INTO `tiendas_objetos` VALUES (2,25),(1,21),(5,18),(2,15),(5,24),(1,12),(1,21),(1,16),(3,16),(1,10),(2,7),(4,17),(5,15),(1,19),(5,6),(1,8);
+/*!40000 ALTER TABLE `tiendas_objetos` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -227,4 +274,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-05-05 21:19:34
+-- Dump completed on 2023-05-17 20:22:27
